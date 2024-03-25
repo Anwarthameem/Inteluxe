@@ -162,17 +162,15 @@ ul li {
   font: 12px/12px var(--sub-font);
 }
 
-.box1 {
+.box-icon-container {
   background-color: white;
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  /* margin: 10px 20px 20px 20px; */
   padding-block-end: 10px;
   padding-inline-end: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 10px;
+  margin-left: 50px;
 }
 .box-icon {
   background-color: var(--primary1-color);
@@ -192,30 +190,30 @@ ul li {
   margin-left: 20px;
 }
 .right-row {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-.form-input {
-  display: flex;
-}
-input {
-  border-radius: 10px;
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-family: var(--sub-font);
-  font-size: xx-small;
-  width: 40%;
-  height: 40px;
-  margin-left: 10px;
-  border: none;
-  padding-left: 20px;
+  font-size: small;
 }
 .message-box {
-  margin-top: 20px;
-  width: 82%;
+  margin-top: 5px;
   height: 120px;
 }
 .right-row button {
   background-color: var(--primary1-color);
-  margin: 15px 200px 10px;
+  margin-left: 220px;
   color: white;
   font-family: var(--sub-font);
   font-size: small;
@@ -262,17 +260,13 @@ hr {
   font-family: var(--sub-font);
   font-size: small;
 }
-/* 
-@media (max-width: 1440px) {
-  .right-row button {
-    margin: 15px 230px;
-  }
-} */
+
 @media (max-width: 1025px) {
   .right-row button {
-    margin: 15px 190px;
+    margin-left: 210px;
   }
 }
+
 @media (max-width: 768px) {
   .the-art-img-container {
     height: auto;
@@ -280,12 +274,24 @@ hr {
   .contact-container {
     margin-top: 100px;
   }
-
-  .right-row button {
-    margin: 15px 90px 10px;
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
-  .message-box {
-    width: 85%;
+  .right-row button {
+    margin-left: 95px;
+  }
+  .box-icon-container {
+    width: auto;
+    height: auto;
+  }
+  .right-row {
+    margin-left: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -317,18 +323,18 @@ hr {
   .box-content {
     margin-top: 10px;
   }
-  input {
-    width: 85%;
-    height: 40px;
-    margin-left: 0px;
-    margin-top: 10px;
+  .box-icon-container {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .form-input {
-    display: block;
+  .right-row {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
 
   .right-row button {
-    margin: 15px 100px;
+    margin-left: 120px;
   }
   .footer-list ul {
     padding-left: 0px;
